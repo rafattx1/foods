@@ -1,0 +1,330 @@
+{
+  "dashboard_overview": {
+    "metrics": {
+      "total_alimentos": 343,
+      "total_ativos": 87,
+      "campanhas_ativas": 3,
+      "taxa_sucesso": "92.5%",
+      "updated_at": "2024-12-14T10:30:00Z"
+    },
+    "campanha_dezembro_2024": {
+      "nome": "Campanha Dezembro 2024",
+      "status": "ativa",
+      "total_participantes": 156,
+      "confirmados": 142,
+      "pendentes": 14,
+      "data_inicio": "2024-12-01",
+      "data_fim": "2024-12-31"
+    }
+  },
+  "acoes_rapidas": [
+    {
+      "id": "1",
+      "titulo": "Validar OSCs pendentes",
+      "descricao": "5 OSCs aguardando validação",
+      "tipo": "validacao",
+      "prioridade": "alta",
+      "status": "pendente"
+    },
+    {
+      "id": "2",
+      "titulo": "Revisar campanhas",
+      "descricao": "3 campanhas precisam de revisão",
+      "tipo": "campanha",
+      "prioridade": "media",
+      "status": "pendente"
+    },
+    {
+      "id": "3",
+      "titulo": "Atualizar dados ETL",
+      "descricao": "Última atualização há 2 dias",
+      "tipo": "etl",
+      "prioridade": "baixa",
+      "status": "atrasado"
+    }
+  ],
+  "participantes_campanha": [
+    {
+      "id": "1",
+      "nome": "Instituto Alimentar São Paulo",
+      "tipo": "OSC",
+      "status": "confirmado",
+      "data_confirmacao": "2024-12-01T09:00:00Z",
+      "loja_parceira": "Extra Centro",
+      "quantidade_prevista_kg": 150,
+      "observacoes": "Confirmado para coleta semanal"
+    },
+    {
+      "id": "2",
+      "nome": "ONG Vida Nova",
+      "tipo": "OSC",
+      "status": "pendente",
+      "data_cadastro": "2024-11-28T14:30:00Z",
+      "loja_parceira": "Pão de Açúcar Vila Madalena",
+      "quantidade_prevista_kg": 200,
+      "observacoes": "Aguardando documentação"
+    },
+    {
+      "id": "3",
+      "nome": "Associação Esperança",
+      "tipo": "OSC",
+      "status": "rejeitado",
+      "data_rejeicao": "2024-11-30T16:45:00Z",
+      "loja_parceira": "Extra Hiper Osasco",
+      "motivo_rejeicao": "Documentação incompleta",
+      "observacoes": "Pode reenviar após correções"
+    },
+    {
+      "id": "4",
+      "nome": "Centro Comunitário Unidos",
+      "tipo": "OSC",
+      "status": "confirmado",
+      "data_confirmacao": "2024-12-02T11:15:00Z",
+      "loja_parceira": "Minimercado Extra Jardins",
+      "quantidade_prevista_kg": 80,
+      "observacoes": "Coleta quinzenal"
+    },
+    {
+      "id": "5",
+      "nome": "Fundação Solidária",
+      "tipo": "OSC",
+      "status": "em_analise",
+      "data_submissao": "2024-12-03T08:20:00Z",
+      "loja_parceira": "Extra Supermercado ABC",
+      "quantidade_prevista_kg": 120,
+      "observacoes": "Análise de capacidade em andamento"
+    }
+  ],
+  "lojas_participantes": [
+    {
+      "id": "1",
+      "nome": "Extra Centro",
+      "endereco": "Rua Augusta, 1234 - Centro, São Paulo - SP",
+      "regional": "Regional Sul",
+      "status": "ativo",
+      "oscs_vinculadas": 3,
+      "capacidade_mensal_kg": 500,
+      "utilizado_mes_atual_kg": 350,
+      "gerente": "Carlos Silva",
+      "telefone": "(11) 3333-1111"
+    },
+    {
+      "id": "2",
+      "nome": "Pão de Açúcar Vila Madalena",
+      "endereco": "Rua Harmonia, 567 - Vila Madalena, São Paulo - SP",
+      "regional": "Regional Sul",
+      "status": "ativo",
+      "oscs_vinculadas": 2,
+      "capacidade_mensal_kg": 400,
+      "utilizado_mes_atual_kg": 280,
+      "gerente": "Ana Costa",
+      "telefone": "(11) 3333-2222"
+    },
+    {
+      "id": "3",
+      "nome": "Extra Hiper Osasco",
+      "endereco": "Av. dos Autonomistas, 890 - Centro, Osasco - SP",
+      "regional": "Regional Norte",
+      "status": "manutencao",
+      "oscs_vinculadas": 1,
+      "capacidade_mensal_kg": 600,
+      "utilizado_mes_atual_kg": 0,
+      "gerente": "Pedro Santos",
+      "telefone": "(11) 3333-3333"
+    },
+    {
+      "id": "4",
+      "nome": "Minimercado Extra Jardins",
+      "endereco": "Rua Oscar Freire, 123 - Jardins, São Paulo - SP",
+      "regional": "Regional Sul",
+      "status": "ativo",
+      "oscs_vinculadas": 1,
+      "capacidade_mensal_kg": 200,
+      "utilizado_mes_atual_kg": 80,
+      "gerente": "Maria Oliveira",
+      "telefone": "(11) 3333-4444"
+    }
+  ],
+  "historico_doacoes": [
+    {
+      "id": "1",
+      "data": "2024-12-10",
+      "loja": "Extra Centro",
+      "osc": "Instituto Alimentar São Paulo",
+      "quantidade_kg": 145,
+      "tipo_alimento": "Frutas e Verduras",
+      "status_validacao": "validado",
+      "responsavel_coleta": "João Silva",
+      "observacoes": "Coleta realizada no horário"
+    },
+    {
+      "id": "2",
+      "data": "2024-12-09",
+      "loja": "Pão de Açúcar Vila Madalena",
+      "osc": "ONG Vida Nova",
+      "quantidade_kg": 180,
+      "tipo_alimento": "Produtos Secos",
+      "status_validacao": "pendente",
+      "responsavel_coleta": "Maria Santos",
+      "observacoes": "Aguardando conferência"
+    },
+    {
+      "id": "3",
+      "data": "2024-12-08",
+      "loja": "Minimercado Extra Jardins",
+      "osc": "Centro Comunitário Unidos",
+      "quantidade_kg": 75,
+      "tipo_alimento": "Laticínios",
+      "status_validacao": "validado",
+      "responsavel_coleta": "Carlos Mendes",
+      "observacoes": "Produtos próximos ao vencimento"
+    },
+    {
+      "id": "4",
+      "data": "2024-12-07",
+      "loja": "Extra Centro",
+      "osc": "Fundação Solidária",
+      "quantidade_kg": 220,
+      "tipo_alimento": "Produtos Diversos",
+      "status_validacao": "rejeitado",
+      "responsavel_coleta": "Ana Lima",
+      "observacoes": "Produtos fora do padrão de qualidade"
+    }
+  ],
+  "alertas_sistema": [
+    {
+      "id": "1",
+      "tipo": "critico",
+      "titulo": "OSC com faltas excessivas",
+      "descricao": "ONG Esperança tem 4 faltas no último mês",
+      "data_criacao": "2024-12-14T08:00:00Z",
+      "status": "ativo",
+      "acao_requerida": "Revisar status da parceria"
+    },
+    {
+      "id": "2",
+      "tipo": "aviso",
+      "titulo": "Capacidade da loja baixa",
+      "descricao": "Extra Centro está com 70% da capacidade utilizada",
+      "data_criacao": "2024-12-13T15:30:00Z",
+      "status": "ativo",
+      "acao_requerida": "Considerar redistribuição"
+    },
+    {
+      "id": "3",
+      "tipo": "info",
+      "titulo": "Nova OSC cadastrada",
+      "descricao": "Instituto Beneficente ABC solicitou cadastro",
+      "data_criacao": "2024-12-12T10:45:00Z",
+      "status": "resolvido",
+      "acao_requerida": "Análise concluída"
+    }
+  ],
+  "relatorios_disponiveis": [
+    {
+      "id": "1",
+      "nome": "Relatório Mensal de Doações",
+      "periodo": "Novembro 2024",
+      "tipo": "doacoes",
+      "formato": "PDF",
+      "tamanho": "2.3 MB",
+      "data_geracao": "2024-12-01T09:00:00Z",
+      "status": "disponivel"
+    },
+    {
+      "id": "2",
+      "nome": "Análise de Performance OSCs",
+      "periodo": "Q4 2024",
+      "tipo": "performance",
+      "formato": "Excel",
+      "tamanho": "1.8 MB",
+      "data_geracao": "2024-12-10T14:30:00Z",
+      "status": "disponivel"
+    },
+    {
+      "id": "3",
+      "nome": "Relatório de Campanhas",
+      "periodo": "Dezembro 2024",
+      "tipo": "campanhas",
+      "formato": "PDF",
+      "tamanho": "3.1 MB",
+      "data_geracao": "2024-12-14T11:00:00Z",
+      "status": "processando"
+    }
+  ],
+  "configuracoes_sistema": {
+    "notificacoes": {
+      "email_alertas": true,
+      "sms_urgente": false,
+      "dashboard_popup": true,
+      "frequencia_relatorios": "semanal"
+    },
+    "validacao": {
+      "aprovacao_automatica": false,
+      "limite_faltas_suspensao": 5,
+      "tempo_limite_coleta_horas": 24,
+      "requer_foto_comprovante": true
+    },
+    "integracao": {
+      "api_externa_ativa": true,
+      "sync_automatico": true,
+      "backup_diario": true,
+      "logs_detalhados": true
+    }
+  },
+  "usuarios_sistema": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@connectingfood.com",
+      "role": "OperacaoCF",
+      "ultimo_acesso": "2024-12-14T09:30:00Z",
+      "status": "ativo",
+      "permissoes": ["visualizar", "editar", "aprovar", "relatorios"]
+    },
+    {
+      "id": "2",
+      "nome": "Maria Santos",
+      "email": "maria@gpa.com.br",
+      "role": "ClienteGPA",
+      "ultimo_acesso": "2024-12-13T16:45:00Z",
+      "status": "ativo",
+      "permissoes": ["visualizar", "relatorios"]
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Admin",
+      "email": "carlos@admin.com",
+      "role": "SuperAdmin",
+      "ultimo_acesso": "2024-12-14T08:15:00Z",
+      "status": "ativo",
+      "permissoes": ["visualizar", "editar", "aprovar", "relatorios", "configurar", "usuarios"]
+    }
+  ],
+  "estatisticas_tempo_real": {
+    "doacoes_hoje": {
+      "quantidade_kg": 425,
+      "numero_coletas": 8,
+      "oscs_ativas": 6,
+      "lojas_participantes": 4
+    },
+    "esta_semana": {
+      "quantidade_kg": 2340,
+      "numero_coletas": 45,
+      "oscs_ativas": 23,
+      "lojas_participantes": 12
+    },
+    "este_mes": {
+      "quantidade_kg": 8750,
+      "numero_coletas": 156,
+      "oscs_ativas": 34,
+      "lojas_participantes": 18
+    },
+    "comparativo_mes_anterior": {
+      "crescimento_kg": "+12.5%",
+      "crescimento_coletas": "+8.3%",
+      "novas_oscs": 3,
+      "novas_lojas": 1
+    }
+  }
+}

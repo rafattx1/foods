@@ -1,0 +1,462 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "João Silva",
+      "email": "joao@connectingfood.com",
+      "role": "OperacaoCF",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Maria Santos",
+      "email": "maria@gpa.com.br",
+      "role": "ClienteGPA",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face",
+      "created_at": "2024-01-02T00:00:00Z",
+      "updated_at": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Carlos Admin",
+      "email": "carlos@admin.com",
+      "role": "SuperAdmin",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face",
+      "created_at": "2024-01-03T00:00:00Z",
+      "updated_at": "2024-01-03T00:00:00Z"
+    }
+  ],
+  "regionais": [
+    {
+      "id": "1",
+      "nome": "Regional Sul",
+      "ativo": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z",
+      "lojas_count": 45
+    },
+    {
+      "id": "2",
+      "nome": "Regional Norte",
+      "ativo": true,
+      "created_at": "2024-01-02T00:00:00Z",
+      "updated_at": "2024-01-02T00:00:00Z",
+      "lojas_count": 32
+    },
+    {
+      "id": "3",
+      "nome": "Regional Centro-Oeste",
+      "ativo": false,
+      "created_at": "2024-01-03T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "lojas_count": 28
+    }
+  ],
+  "lojas": [
+    {
+      "id": "1",
+      "nome": "Extra Centro São Paulo",
+      "endereco_principal": "Rua Augusta, 1234 - Centro, São Paulo - SP",
+      "ativo": true,
+      "regional_id": "1",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z",
+      "regional": {
+        "id": "1",
+        "nome": "Regional Sul"
+      },
+      "parcerias_count": 8
+    },
+    {
+      "id": "2",
+      "nome": "Pão de Açúcar Vila Madalena",
+      "endereco_principal": "Rua Harmonia, 567 - Vila Madalena, São Paulo - SP",
+      "ativo": true,
+      "regional_id": "1",
+      "created_at": "2024-01-02T00:00:00Z",
+      "updated_at": "2024-01-02T00:00:00Z",
+      "regional": {
+        "id": "1",
+        "nome": "Regional Sul"
+      },
+      "parcerias_count": 12
+    },
+    {
+      "id": "3",
+      "nome": "Extra Hiper Osasco",
+      "endereco_principal": "Av. dos Autonomistas, 890 - Centro, Osasco - SP",
+      "ativo": true,
+      "regional_id": "2",
+      "created_at": "2024-01-03T00:00:00Z",
+      "updated_at": "2024-01-03T00:00:00Z",
+      "regional": {
+        "id": "2",
+        "nome": "Regional Norte"
+      },
+      "parcerias_count": 6
+    },
+    {
+      "id": "4",
+      "nome": "Minimercado Extra Jardins",
+      "endereco_principal": "Rua Oscar Freire, 123 - Jardins, São Paulo - SP",
+      "ativo": false,
+      "regional_id": "1",
+      "created_at": "2024-01-04T00:00:00Z",
+      "updated_at": "2024-11-15T00:00:00Z",
+      "regional": {
+        "id": "1",
+        "nome": "Regional Sul"
+      },
+      "parcerias_count": 3
+    }
+  ],
+  "oscs": [
+    {
+      "id": "1",
+      "cnpj": "12.345.678/0001-90",
+      "nome": "Instituto Solidário",
+      "ativo": true,
+      "status_banimento": "ativo",
+      "created_at": "2024-01-15T00:00:00Z",
+      "updated_at": "2024-01-15T00:00:00Z",
+      "faltas_count": 2,
+      "contatos": [
+        {
+          "id": "1",
+          "nome": "Ana Costa",
+          "email": "ana@institutosolidario.org",
+          "telefone": "(11) 99999-1111",
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "cnpj": "98.765.432/0001-10",
+      "nome": "ONG Esperança",
+      "ativo": false,
+      "status_banimento": "suspenso",
+      "justificativa_suspensao": "5 faltas consecutivas sem justificativa válida",
+      "created_at": "2024-01-10T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "faltas_count": 5,
+      "contatos": [
+        {
+          "id": "2",
+          "nome": "Pedro Silva",
+          "email": "pedro@ongesperanca.org",
+          "telefone": "(11) 99999-2222",
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "cnpj": "11.222.333/0001-44",
+      "nome": "Associação Vida Nova",
+      "ativo": true,
+      "status_banimento": "ativo",
+      "created_at": "2024-02-01T00:00:00Z",
+      "updated_at": "2024-02-01T00:00:00Z",
+      "faltas_count": 4,
+      "contatos": [
+        {
+          "id": "3",
+          "nome": "Carla Mendes",
+          "email": "carla@vidanova.org",
+          "telefone": "(11) 99999-3333",
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "cnpj": "55.666.777/0001-88",
+      "nome": "Centro Comunitário Unidos",
+      "ativo": false,
+      "status_banimento": "banido",
+      "justificativa_suspensao": "Comportamento inadequado e múltiplas violações das regras",
+      "created_at": "2024-01-05T00:00:00Z",
+      "updated_at": "2024-11-15T00:00:00Z",
+      "faltas_count": 8,
+      "contatos": [
+        {
+          "id": "4",
+          "nome": "Roberto Lima",
+          "email": "roberto@centrocomunitario.org",
+          "telefone": "(11) 99999-4444",
+          "ativo": false
+        }
+      ]
+    }
+  ],
+  "parcerias": [
+    {
+      "id": "1",
+      "loja_id": "1",
+      "osc_id": "1",
+      "favorita": true,
+      "ativa": true,
+      "status_suspensao": false,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z",
+      "loja": {
+        "id": "1",
+        "nome": "Extra Centro São Paulo"
+      },
+      "osc": {
+        "id": "1",
+        "nome": "Instituto Solidário"
+      }
+    },
+    {
+      "id": "2",
+      "loja_id": "1",
+      "osc_id": "2",
+      "favorita": false,
+      "ativa": true,
+      "status_suspensao": false,
+      "created_at": "2024-01-02T00:00:00Z",
+      "updated_at": "2024-01-02T00:00:00Z",
+      "loja": {
+        "id": "1",
+        "nome": "Extra Centro São Paulo"
+      },
+      "osc": {
+        "id": "2",
+        "nome": "ONG Esperança"
+      }
+    },
+    {
+      "id": "3",
+      "loja_id": "2",
+      "osc_id": "1",
+      "favorita": true,
+      "ativa": true,
+      "status_suspensao": false,
+      "created_at": "2024-01-03T00:00:00Z",
+      "updated_at": "2024-01-03T00:00:00Z",
+      "loja": {
+        "id": "2",
+        "nome": "Pão de Açúcar Vila Madalena"
+      },
+      "osc": {
+        "id": "1",
+        "nome": "Instituto Solidário"
+      }
+    }
+  ],
+  "campanhas": [
+    {
+      "id": "1",
+      "nome": "Campanha Natal 2024",
+      "data": "2024-12-15T00:00:00Z",
+      "status": "ativa",
+      "created_at": "2024-11-01T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "lojas_participantes": 45,
+      "oscs_confirmadas": 38,
+      "total_doacoes_kg": 2340,
+      "campanhas_loja": [
+        {
+          "id": "1",
+          "loja_id": "1",
+          "osc_id": "1",
+          "confirmada": true,
+          "status_prospecao": true
+        },
+        {
+          "id": "2",
+          "loja_id": "2",
+          "osc_id": "1",
+          "confirmada": true,
+          "status_prospecao": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Ação Solidária Novembro",
+      "data": "2024-11-20T00:00:00Z",
+      "status": "encerrada",
+      "created_at": "2024-10-15T00:00:00Z",
+      "updated_at": "2024-11-25T00:00:00Z",
+      "lojas_participantes": 32,
+      "oscs_confirmadas": 29,
+      "total_doacoes_kg": 1890,
+      "campanhas_loja": []
+    },
+    {
+      "id": "3",
+      "nome": "Campanha Páscoa 2025",
+      "data": "2025-03-30T00:00:00Z",
+      "status": "planejamento",
+      "created_at": "2024-12-01T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "lojas_participantes": 0,
+      "oscs_confirmadas": 0,
+      "total_doacoes_kg": 0,
+      "campanhas_loja": []
+    }
+  ],
+  "doacoes": [
+    {
+      "id": "1",
+      "campanha_loja_id": "1",
+      "quantidade_recebida_kg": 150,
+      "quantidade_validada_kg": 145,
+      "modo_validacao": "completa",
+      "created_at": "2024-12-01T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "campanha_loja": {
+        "id": "1",
+        "loja": {
+          "nome": "Extra Centro São Paulo"
+        },
+        "osc": {
+          "nome": "Instituto Solidário"
+        },
+        "campanha": {
+          "nome": "Campanha Natal 2024"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "campanha_loja_id": "2",
+      "quantidade_recebida_kg": 200,
+      "quantidade_validada_kg": 180,
+      "modo_validacao": "amostragem",
+      "created_at": "2024-12-01T00:00:00Z",
+      "updated_at": "2024-12-01T00:00:00Z",
+      "campanha_loja": {
+        "id": "2",
+        "loja": {
+          "nome": "Pão de Açúcar Vila Madalena"
+        },
+        "osc": {
+          "nome": "Instituto Solidário"
+        },
+        "campanha": {
+          "nome": "Campanha Natal 2024"
+        }
+      }
+    }
+  ],
+  "faltas": [
+    {
+      "id": "1",
+      "osc_id": "2",
+      "campanha_loja_id": "1",
+      "justificativa": "Problemas de transporte",
+      "data": "2024-11-15T00:00:00Z",
+      "created_at": "2024-11-15T00:00:00Z",
+      "updated_at": "2024-11-15T00:00:00Z",
+      "osc": {
+        "nome": "ONG Esperança"
+      },
+      "campanha_loja": {
+        "loja": {
+          "nome": "Extra Centro São Paulo"
+        },
+        "campanha": {
+          "nome": "Ação Solidária Novembro"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "osc_id": "2",
+      "campanha_loja_id": "2",
+      "justificativa": "Falta de voluntários",
+      "data": "2024-10-20T00:00:00Z",
+      "created_at": "2024-10-20T00:00:00Z",
+      "updated_at": "2024-10-20T00:00:00Z",
+      "osc": {
+        "nome": "ONG Esperança"
+      },
+      "campanha_loja": {
+        "loja": {
+          "nome": "Pão de Açúcar Vila Madalena"
+        },
+        "campanha": {
+          "nome": "Ação Solidária Outubro"
+        }
+      }
+    }
+  ],
+  "dashboard_metrics": {
+    "total_campanhas": 24,
+    "campanhas_ativas": 3,
+    "total_doacoes_kg": 15420,
+    "oscs_ativas": 89,
+    "oscs_suspensas": 5,
+    "oscs_banidas": 2,
+    "lojas_ativas": 156,
+    "taxa_confirmacao": 87,
+    "faltas_mes_atual": 12,
+    "updated_at": "2024-12-14T10:30:00Z"
+  },
+  "etl_logs": [
+    {
+      "id": "1",
+      "tipo": "lojas",
+      "arquivo": "lojas_dezembro_2024.csv",
+      "total_records": 150,
+      "valid_records": 142,
+      "invalid_records": 8,
+      "status": "concluido",
+      "created_at": "2024-12-01T09:00:00Z",
+      "warnings": [
+        "5 lojas com endereços incompletos - marcadas para verificação",
+        "3 regionais não encontradas - criadas automaticamente"
+      ],
+      "errors": ["2 registros com CNPJ inválido", "6 registros duplicados removidos"]
+    },
+    {
+      "id": "2",
+      "tipo": "regionais",
+      "arquivo": "regionais_novembro_2024.csv",
+      "total_records": 25,
+      "valid_records": 25,
+      "invalid_records": 0,
+      "status": "concluido",
+      "created_at": "2024-11-15T14:30:00Z",
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "validation_results": [
+    {
+      "id": "1",
+      "campanha_id": "1",
+      "total_records": 25,
+      "valid_records": 22,
+      "invalid_records": 3,
+      "total_kg_recebido": 3250,
+      "total_kg_validado": 3180,
+      "modo_validacao": "completa",
+      "created_at": "2024-12-01T16:00:00Z",
+      "divergencias": [
+        {
+          "loja": "Extra Centro São Paulo",
+          "osc": "Instituto Solidário",
+          "kg_recebido": 150,
+          "kg_validado": 145,
+          "diferenca": -5,
+          "motivo": "Produtos vencidos identificados na validação"
+        },
+        {
+          "loja": "Pão de Açúcar Vila Madalena",
+          "osc": "ONG Esperança",
+          "kg_recebido": 200,
+          "kg_validado": 180,
+          "diferenca": -20,
+          "motivo": "Embalagens danificadas"
+        }
+      ]
+    }
+  ]
+}
